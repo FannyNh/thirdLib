@@ -25,7 +25,7 @@ export default defineConfig((configEnv) => ({
       entry: resolve('src', 'component/index.ts'),
       name: 'ThirdLib',
       formats: ['es', 'umd'],
-      fileName: (format) => `thirdLib.${format}.js`,
+      fileName: (format) => `thirdlib.${format}.js`,
     },
     rollupOptions: {
       external: [...Object.keys(packageJson.peerDependencies)],

@@ -1,2 +1,2 @@
-# thirdLib
+# thirdlib
 library react

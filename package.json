@@ -1,5 +1,5 @@
 {
-  "name": "thirdLib",
+  "name": "thirdlib",
   "private": false,
   "version": "0.0.0",
   "type": "module",
@@ -22,27 +22,27 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/thirdLib.es.js",
-      "require": "./dist/thirdLib.umd.js"
+      "import": "./dist/thirdlib.es.js",
+      "require": "./dist/thirdlib.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
-  "main": "./dist/thirdLib.umd.js",
-  "module": "./dist/thirdLib.es.js",
+  "main": "./dist/thirdlib.umd.js",
+  "module": "./dist/thirdlib.es.js",
   "types": "./dist/index.d.ts",
   "devDependencies": {
     "@types/node": "^18.7.6",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.34.0",
-    "@typescript-eslint/parser": "^5.34.0",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
     "@vitejs/plugin-react": "^2.1.0",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^8.0.1",
@@ -62,7 +62,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fannynh/thirdLib"
+    "url": "https://github.com/fannynh/thirdlib"
   },
   "keywords": [
     "react",
@@ -71,8 +71,8 @@
   ],
   "author": "Fannynh",
   "bugs": {
-    "url": "https://github.com/fannynh/thirdLib/issues"
+    "url": "https://github.com/fannynh/thirdlib/issues"
   },
-  "homepage": "https://github.com/fannynh/thirdLib#readme",
+  "homepage": "https://github.com/fannynh/thirdlib#readme",
   "license": "MIT"
 }

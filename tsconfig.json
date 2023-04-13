@@ -19,7 +19,7 @@
     "declarationMap": true,
     "baseUrl": ".",
     "paths": {
-      "thirdLib": [ "src/component/index.ts" ]
+      "thirdlib": [ "src/component/index.ts" ]
     },
     "typeRoots": [
       "node_modules/@types",
