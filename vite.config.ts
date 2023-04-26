@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 import EsLint from 'vite-plugin-linter'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 import tsConfigPaths from 'vite-tsconfig-paths'
 const { EsLinter, linterPlugin } = EsLint
 import * as packageJson from './package.json'
@@ -19,6 +20,14 @@ export default defineConfig((configEnv) => ({
       include: ['./src}/**/*.{ts,tsx}'],
       linters: [new EsLinter({ configEnv })],
     }),
+    viteStaticCopy({
+      targets: [
+        {
+          src: './src/tailwind.js',
+          dest: './'
+        }
+      ]
+    })
   ],
   build: {
     lib: {
@@ -30,5 +39,5 @@ export default defineConfig((configEnv) => ({
     rollupOptions: {
       external: [...Object.keys(packageJson.peerDependencies)],
     },
-  },
+  }
 }))

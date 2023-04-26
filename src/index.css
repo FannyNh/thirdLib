@@ -1,69 +1,92 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import 'tailwindcss/base';
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@import 'tailwindcss/components';
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+@import 'tailwindcss/utilities';
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+/*:root {*/
+/*  --primary-color: #007bff; !* Default primary color *!*/
+/*  --secondary-color: #6c757d; !* Default secondary color *!*/
+/*  --success-color: #28a745; !* Default success color *!*/
+/*  --warning-color: #ffc107; !* Default warning color *!*/
+/*  --danger-color: #dc3545; !* Default danger or error color *!*/
+/*  --info-color: #17a2b8; !* Default information color *!*/
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+/*  --light-color: #f8f9fa; !* Default light bg color *!*/
+/*  --dark-color: #343a40; !* Default dark bg color *!*/
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+/*  --text-color: #333; !* Default text color *!*/
+/*  --heading-color: #444; !* Default headtitle color *!*/
+/*  --subheading-color: #777; !* Default sur title color *!*/
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+/*  --background-color: var(--light-color); !* Default bg color *!*/
+/*  --foreground-color: var(--text-color); !* Default main color text color *!*/
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+/*  --accent-color: var(--primary-color); !* Default color for accentuate a word or text  *!*/
+/*  --hover-color: var(--secondary-color); !* Default hover color *!*/
+/*  --active-color: var(--primary-color); !* Default active color *!*/
+
+/*  --border-color: var(--secondary-color); !* default border color*!*/
+
+
+/*  --success-background-color: var(--success-color); !* Default bg for success *!*/
+/*  --success-border-color: var(--success-color); !* Default border for success *!*/
+/*  --warning-background-color: var(--warning-color); !* Default bg for warning *!*/
+/*  --warning-border-color: var(--warning-color);*/
+/*  --danger-background-color: var(--danger-color); !* Default bg for danger or error *!*/
+/*  --danger-border-color: var(--danger-color);*/
+
+/*  --link-color: var(--primary-color);*/
+/*  --link-hover-color: var(--primary-color);*/
+/*  --link-active-color: var(--primary-color);*/
+
+/*  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;*/
+/*  line-height: 1.5;*/
+/*  font-weight: 400;*/
+
+/*  font-synthesis: none;*/
+/*  text-rendering: optimizeLegibility;*/
+/*  -webkit-font-smoothing: antialiased;*/
+/*  -moz-osx-font-smoothing: grayscale;*/
+/*  -webkit-text-size-adjust: 100%;*/
+/*}*/
+
+/*a {*/
+/*  font-weight: 500;*/
+/*  color: var(--link-color);*/
+/*  text-decoration: inherit;*/
+/*}*/
+/*a:hover {*/
+/*  color: var(--link-hover-color);*/
+/*}*/
+
+/*body {*/
+/*  margin: 0;*/
+/*  display: flex;*/
+/*  place-items: center;*/
+/*  min-width: 320px;*/
+/*  min-height: 100vh;*/
+/*}*/
+
+/*h1 {*/
+/*  font-size: 3.2em;*/
+/*  line-height: 1.1;*/
+/*}*/
+
+/*button {*/
+/*  border-radius: 8px;*/
+/*  border: 1px solid transparent;*/
+/*  padding: 0.6em 1.2em;*/
+/*  font-size: 1em;*/
+/*  font-weight: 500;*/
+/*  font-family: inherit;*/
+/*  background-color: var(--primary-color);*/
+/*  cursor: pointer;*/
+/*}*/
+/*button:hover {*/
+/*  border-color: var(--primary-color);*/
+/*  background-color: white;*/
+/*  color: var(--primary-color);*/
+/*}*/
+
+

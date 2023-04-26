@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:watch": "vite build --watch",
     "preview": "vite preview",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
@@ -25,18 +26,24 @@
       "import": "./dist/thirdlib.es.js",
       "require": "./dist/thirdlib.umd.js"
     },
-    "./dist/style.css": "./dist/style.css"
+    "./dist/style.css": "./dist/style.css",
+    "./tailwind": {
+      "import": "./dist/tailwind.js",
+      "require": "./dist/tailwind.js"
+    }
   },
   "main": "./dist/thirdlib.umd.js",
   "module": "./dist/thirdlib.es.js",
   "types": "./dist/index.d.ts",
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.17",
     "@types/node": "^18.7.6",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
     "@vitejs/plugin-react": "^2.1.0",
+    "autoprefixer": "^10.4.14",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.3",
@@ -47,9 +54,11 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.2.1",
+    "postcss": "^8.4.21",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.1",
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
     "vite-plugin-dts": "^1.4.1",
@@ -57,8 +66,10 @@
     "vite-tsconfig-paths": "^3.5.0"
   },
   "peerDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "react": "16.8.0 || >=17.x",
-    "react-dom": "16.8.0 || >=17.x"
+    "react-dom": "16.8.0 || >=17.x",
+    "tailwindcss": "^3.0.0"
   },
   "repository": {
     "type": "git",
@@ -74,5 +85,8 @@
     "url": "https://github.com/fannynh/thirdlib/issues"
   },
   "homepage": "https://github.com/fannynh/thirdlib#readme",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "vite-plugin-static-copy": "^0.13.1"
+  }
 }
