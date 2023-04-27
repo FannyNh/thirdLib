@@ -4,6 +4,23 @@
 
 @import 'tailwindcss/utilities';
 
+@keyframes horizontalLoop {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-horizontalLoop {
+    animation: horizontalLoop 1s linear infinite;
+}
+
+.animate-horizontalLoop-reverse {
+    animation: horizontalLoop 1s linear infinite reverse;
+}
+
 /*:root {*/
 /*  --primary-color: #007bff; !* Default primary color *!*/
 /*  --secondary-color: #6c757d; !* Default secondary color *!*/

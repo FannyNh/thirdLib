@@ -35,6 +35,9 @@ classesSafeList.push(`border-double`)
 classesSafeList.push(`border-none`)
 classesSafeList.push(`border-4`)
 classesSafeList.push(`rounded-tr-2xl`)
+classesSafeList.push(`animate-horizontalLoop-reverse`)
+classesSafeList.push(`animate-horizontalLoop`)
+classesSafeList.push(`horizontalLoop`)
 
 customs.forEach((custom) => {
   classesSafeList.push(`bg-${custom}`)
