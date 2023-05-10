@@ -9,7 +9,7 @@ interface TypeAlert  {
 
 export const Alert = ({type = 'info',children} : TypeAlert ) => {
     const [showAlert, setShowAlert ] = useState(true)
-    const classes = ['w-96 rounded-md m-2 p-2 pt-3 min-h-[60px] flex items-center ']
+    const classes = ['w-96 rounded-md m-2 p-2 pt-3 min-h-[60px] relative flex items-center ']
 
     const HandleClose = () => {
         setShowAlert(false)
