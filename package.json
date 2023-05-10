@@ -87,6 +87,8 @@
   "homepage": "https://github.com/fannynh/thirdlib#readme",
   "license": "MIT",
   "dependencies": {
+    "@headlessui/react": "^1.7.14",
+    "@heroicons/react": "^2.0.18",
     "vite-plugin-static-copy": "^0.13.1"
   }
 }

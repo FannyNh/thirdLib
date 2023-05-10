@@ -1,6 +1,6 @@
-import React , { ReactNode } from "react";
+import React from "react";
 
-type AllowedColor = 'orange' | 'amber' | 'yellow' | 'lime' | 'teal' | 'cyan' | 'indigo' | 'violet' | 'pink';
+import {AllowedColor} from '../types/Types'
 interface TypesCard {
     isShadow?: boolean,
     border?: 'none' | 'simple' | 'double',
@@ -9,7 +9,7 @@ interface TypesCard {
 }
 
 export const Card = ({isShadow = false, border= 'double', bgColor = 'pink', children,  } : TypesCard ) => {
-    const classes = ['overflow-hidden mb-12 py-6 px-4 sm:p-6 rounded-tr-2xl w-full h-full '];
+    const classes = ['overflow-hidden py-6 px-4 sm:p-6 rounded-tr-2xl w-full h-full hover:scale-95 transition ease-in-out duration-500 '];
     switch (border) {
         case 'none':
         classes.push(`border-0 border-${bgColor}-400`);

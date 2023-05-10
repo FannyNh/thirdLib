@@ -21,6 +21,7 @@ for (const colorName in colors) {
         classesSafeList.push(`bg-${colorName}-${shade}`)
         classesSafeList.push(`ring-${colorName}-${shade}`)
         classesSafeList.push(`border-${colorName}-${shade}`)
+        classesSafeList.push(`shadow-${colorName}-500/50`)
         variants.forEach((variant) => {
           classesSafeList.push(`${variant}:bg-${colorName}-${shade}`)
           classesSafeList.push(`${variant}:ring-${colorName}-${shade}`)
@@ -38,6 +39,8 @@ classesSafeList.push(`rounded-tr-2xl`)
 classesSafeList.push(`animate-horizontalLoop-reverse`)
 classesSafeList.push(`animate-horizontalLoop`)
 classesSafeList.push(`horizontalLoop`)
+classesSafeList.push(`whitespace-nowrap`)
+
 
 customs.forEach((custom) => {
   classesSafeList.push(`bg-${custom}`)
@@ -72,7 +75,17 @@ module.exports = {
         primaryHover: 'rgba(var(--color-primary-hover))!important',
         secondary: 'rgb(var(--color-secondary))!important',
         secondaryHover: 'rgba(var(--color-secondary-hover))!important'
-      }
+      },
+      keyframes: {
+        horizontalLoop: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        'horizontalLoop': 'horizontalLoop 1s linear infinite',
+        'horizontalLoop-reverse': 'horizontalLoop 1s linear infinite reverse',
+      },
     }
   }
 }

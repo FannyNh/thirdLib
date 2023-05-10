@@ -1,3 +1,5 @@
+export {Alert as ThirdAlert} from './alert/Alert'
+export {Button as ThirdButton} from './button/Button'
 export {Card} from './card/Card'
-export { Helloworld } from './helloWorld/HelloWorld'
+export {Label as ThirdLabel} from './label/Label'
 export {TextHorizontalLoop} from './texts/TextHorizontalLoop'
